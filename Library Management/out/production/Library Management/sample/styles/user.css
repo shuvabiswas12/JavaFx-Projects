@@ -1,0 +1,11 @@
+.top-box {
+    -fx-background-color: #00e676;
+}
+
+.btn {
+    -fx-background-color: #acdbe2;
+}
+
+.text-box {
+    -fx-font-size: 20px;
+}

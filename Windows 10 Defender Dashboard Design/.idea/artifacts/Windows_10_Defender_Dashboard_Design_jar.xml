@@ -1,0 +1,9 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="Windows 10 Defender Dashboard Design:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/Windows_10_Defender_Dashboard_Design_jar</output-path>
+    <root id="archive" name="Windows 10 Defender Dashboard Design.jar">
+      <element id="module-output" name="Windows 10 Defender Dashboard Design" />
+      <element id="extracted-dir" path="F:/Java Lib/fontawesomefx-8.1.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="435.0" prefWidth="674.0" stylesheets="@style.css" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.SplashController">
+   <children>
+      <Line endX="100.0" layoutX="87.0" layoutY="218.0" rotate="90.0" scaleX="2.0" startX="-100.0" stroke="#c64110" strokeWidth="10.0" AnchorPane.leftAnchor="-18.0" AnchorPane.rightAnchor="482.0" />
+      <Line endX="100.0" layoutX="338.0" layoutY="366.0" scaleX="3.1" startX="-100.0" stroke="#c64110" strokeWidth="10.0">
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor>
+      </Line>
+      <Text layoutX="103.0" layoutY="200.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-fill: white; -fx-font-weight: bold;" styleClass="fn-30" text="Splash Screen with Preloader Example " />
+      <Text layoutX="103.0" layoutY="235.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="fn-16" text="Version 1.1" />
+      <Label fx:id="loadingId" layoutX="518.0" layoutY="324.0" styleClass="textfill" text="Loading" />
+      <Text layoutX="325.0" layoutY="407.0" strokeType="OUTSIDE" strokeWidth="0.0" text="\@2018 JavaFx Help Solution  Email: shuvabiswas12@yahoo.com" />
+   </children>
+</AnchorPane>

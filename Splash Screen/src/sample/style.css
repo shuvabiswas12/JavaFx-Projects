@@ -1,0 +1,29 @@
+.root {
+    -fx-background-color: #ffa247;
+}
+
+.fn-14 {
+    -fx-font-size: 14px;
+}
+
+.fn-16 {
+    -fx-font-size: 16px;
+}
+
+.fn-18 {
+    -fx-font-size: 18px;
+}
+
+.fn-20 {
+    -fx-font-size: 20px;
+}
+
+.fn-30 {
+    -fx-font-size: 30px;
+}
+
+.textfill {
+    -fx-text-fill: #9a9a9a;
+    -fx-font-weight: bold;
+    -fx-font-size: 16px;
+}

@@ -1,0 +1,10 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="2DO Application:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/2DO_Application_jar</output-path>
+    <root id="archive" name="2DO Application.jar">
+      <element id="module-output" name="2DO Application" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/com/jfoenix/jfoenix/1.11.1/jfoenix-1.11.1.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="F:/Java Lib/mysql-connector-java-5.1.44/mysql-connector-java-5.1.44-bin.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane onKeyReleased="#shortKey" prefHeight="400.0" prefWidth="600.0" stylesheets="@../styles/user.css" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controller.LoginController">
+   <children>
+      <AnchorPane layoutX="200.0" layoutY="14.0" prefHeight="80.0" prefWidth="200.0" styleClass="top-box" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Text layoutX="173.0" layoutY="48.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Library Assistant Login">
+               <font>
+                  <Font name="Roboto" size="25.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
+      <JFXTextField fx:id="userName_ID" layoutX="120.0" layoutY="115.0" prefHeight="50.0" prefWidth="360.0" promptText="UserName">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </JFXTextField>
+      <JFXPasswordField fx:id="password_Id" layoutX="120.0" layoutY="195.0" prefHeight="50.0" prefWidth="360.0" promptText="Password">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </JFXPasswordField>
+      <HBox alignment="CENTER" layoutX="120.0" layoutY="275.0" prefWidth="360.0" spacing="10.0">
+         <children>
+            <JFXButton fx:id="login_Btn" buttonType="RAISED" prefHeight="50.0" prefWidth="180.0" styleClass="btn" text="Login">
+               <font>
+                  <Font size="16.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <JFXButton fx:id="cancel_Btn" buttonType="RAISED" prefHeight="50.0" prefWidth="180.0" styleClass="btn" text="Cancel">
+               <font>
+                  <Font size="16.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" layoutX="200.0" layoutY="344.0" AnchorPane.bottomAnchor="31.0" AnchorPane.leftAnchor="200.0" AnchorPane.rightAnchor="200.0" AnchorPane.topAnchor="344.0">
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Not Registered Yet ?">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Text>
+            <JFXButton buttonType="RAISED" onAction="#signUpBtnAction" ripplerFill="#02ff02" text="Signup" textFill="RED">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

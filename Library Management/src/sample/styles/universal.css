@@ -1,0 +1,30 @@
+
+
+.button {
+    -fx-background-color: #4bdce2;
+    -fx-border-width: none;
+}
+
+.button:hover{
+    -fx-background-color: #ffffff;
+    -fx-border-width: none;
+}
+
+.button:pressed{
+    -fx-background-color: #ffa247;
+    -fx-border-width: none;
+}
+
+.text-field {
+    -fx-background-color: transparent;
+}
+
+.add-book {
+    -fx-background-color: #acdbe2;
+}
+
+.table-view {
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+    -fx-border-width: none;
+}

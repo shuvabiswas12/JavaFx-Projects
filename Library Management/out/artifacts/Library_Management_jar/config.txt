@@ -1,0 +1,1 @@
+{"no_of_days":14,"uPassword":"ritu","uFine":2.0,"uName":"ritu","email":"ritu@email.com","location":"CTG"}

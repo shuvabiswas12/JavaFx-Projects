@@ -1,0 +1,13 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="Library Management:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/Library_Management_jar</output-path>
+    <root id="archive" name="Library Management.jar">
+      <element id="module-output" name="Library Management" />
+      <element id="extracted-dir" path="F:/Java Lib/derby/derby.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="F:/Java Lib/derby/derbyclient.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="F:/Java Lib/gson-2.8.5.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="F:/Java Lib/jfoenix.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="F:/Java Lib/controlsfx-8.40.14/controlsfx-8.40.14.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>

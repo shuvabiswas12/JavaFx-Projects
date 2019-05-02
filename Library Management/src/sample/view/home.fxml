@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="505.0" prefWidth="773.0" stylesheets="@../styles/home_css.css" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controller.HomeController">
+   <children>
+      <BorderPane prefHeight="200.0" prefWidth="200.0">
+         <top>
+            <MenuBar BorderPane.alignment="CENTER">
+              <menus>
+                <Menu mnemonicParsing="false" text="File">
+                  <items>
+                        <MenuItem mnemonicParsing="false" onAction="#addBooksAction" text="Add Books" />
+                        <MenuItem mnemonicParsing="false" onAction="#addMembersAction" text="Add Members" />
+                        <MenuItem mnemonicParsing="false" onAction="#viewBookActions" text="View Books" />
+                        <MenuItem mnemonicParsing="false" onAction="#viewMembersAction" text="View Members" />
+                        <MenuItem mnemonicParsing="false" onAction="#preferencesAction" text="Preferences" />
+                    <MenuItem mnemonicParsing="false" onAction="#exitAction" text="Exit" />
+                  </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Help">
+                  <items>
+                    <MenuItem mnemonicParsing="false" onAction="#aboutAction" text="About" />
+                  </items>
+                </Menu>
+              </menus>
+            </MenuBar>
+         </top>
+         <right>
+            <VBox prefHeight="480.0" prefWidth="132.0" styleClass="tool-bar" BorderPane.alignment="CENTER">
+               <children>
+                  <JFXButton alignment="CENTER" contentDisplay="TOP" onAction="#addMembers" prefHeight="700.0" prefWidth="200.0" text="Add Members" textAlignment="CENTER" VBox.vgrow="ALWAYS">
+                     <graphic>
+                        <ImageView fitHeight="30.0" fitWidth="134.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../assests/add-%20members.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <font>
+                        <Font name="Roboto" size="15.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </JFXButton>
+                  <JFXButton alignment="CENTER" contentDisplay="TOP" onAction="#addBooks" prefHeight="700.0" prefWidth="200.0" text="Add Books" textAlignment="CENTER" VBox.vgrow="ALWAYS">
+                     <graphic>
+                        <ImageView fitHeight="30.0" fitWidth="134.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../assests/add-books.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <font>
+                        <Font name="Roboto" size="15.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </JFXButton>
+                  <JFXButton alignment="CENTER" contentDisplay="TOP" onAction="#viewMembers" prefHeight="700.0" prefWidth="200.0" text="View Members" textAlignment="CENTER" VBox.vgrow="ALWAYS">
+                     <graphic>
+                        <ImageView fitHeight="30.0" fitWidth="134.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../assests/icons8-member-48.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <font>
+                        <Font name="Roboto" size="15.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </JFXButton>
+                  <JFXButton alignment="CENTER" contentDisplay="TOP" onAction="#viewBooks" prefHeight="700.0" prefWidth="200.0" text="View Books" textAlignment="CENTER" VBox.vgrow="ALWAYS">
+                     <graphic>
+                        <ImageView fitHeight="30.0" fitWidth="134.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../assests/icons8-books-48.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <font>
+                        <Font name="Roboto" size="15.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </JFXButton>
+                  <JFXButton alignment="CENTER" contentDisplay="TOP" onAction="#settings" prefHeight="700.0" prefWidth="200.0" text="Settings" textAlignment="CENTER">
+                     <graphic>
+                        <ImageView fitHeight="30.0" fitWidth="134.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../assests/icons8-settings-64.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <font>
+                        <Font name="Roboto" size="15.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </JFXButton>
+               </children>
+            </VBox>
+         </right>
+         <center>
+            <TabPane prefHeight="200.0" prefWidth="200.0" tabClosingPolicy="UNAVAILABLE" BorderPane.alignment="CENTER">
+              <tabs>
+                <Tab fx:id="book_Issue_ID" text="Book Issue">
+                  <content>
+                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                           <children>
+                              <VBox layoutX="83.0" layoutY="14.0" prefHeight="200.0" prefWidth="183.0" spacing="10.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                 <children>
+                                    <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" styleClass="hbox" VBox.vgrow="ALWAYS">
+                                       <children>
+                                          <TextField fx:id="bookInput" onAction="#loadBookInfo" prefHeight="40.0" prefWidth="100.0" promptText="Book ID" HBox.hgrow="ALWAYS">
+                                             <font>
+                                                <Font name="Roboto" size="16.0" />
+                                             </font></TextField>
+                                          <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" spacing="6.0" HBox.hgrow="ALWAYS">
+                                             <children>
+                                                <Text fx:id="bookName" strokeType="OUTSIDE" strokeWidth="0.0" text="Book Name" textAlignment="CENTER">
+                                                   <font>
+                                                      <Font name="Roboto" size="18.0" />
+                                                   </font>
+                                                </Text>
+                                                <Text fx:id="author" strokeType="OUTSIDE" strokeWidth="0.0" text="Author" textAlignment="CENTER">
+                                                   <font>
+                                                      <Font name="Roboto" size="16.0" />
+                                                   </font>
+                                                </Text>
+                                                <Text fx:id="bookStatus" strokeType="OUTSIDE" strokeWidth="0.0" text="Book Status" textAlignment="CENTER">
+                                                   <font>
+                                                      <Font name="Roboto" size="16.0" />
+                                                   </font>
+                                                </Text>
+                                             </children>
+                                          </VBox>
+                                       </children>
+                                       <padding>
+                                          <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+                                       </padding>
+                                    </HBox>
+                                    <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: #e7e7e7;" VBox.vgrow="ALWAYS">
+                                       <children>
+                                          <TextField fx:id="memberInputid" onAction="#loadMemberInfo" prefHeight="40.0" prefWidth="100.0" promptText="Member ID" HBox.hgrow="ALWAYS">
+                                             <font>
+                                                <Font size="16.0" />
+                                             </font></TextField>
+                                          <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" spacing="6.0" HBox.hgrow="ALWAYS">
+                                             <children>
+                                                <Text fx:id="memberName" strokeType="OUTSIDE" strokeWidth="0.0" text="Member Name" textAlignment="CENTER">
+                                                   <font>
+                                                      <Font name="Roboto" size="18.0" />
+                                                   </font>
+                                                </Text>
+                                                <Text fx:id="contact" strokeType="OUTSIDE" strokeWidth="0.0" text="Contact" textAlignment="CENTER">
+                                                   <font>
+                                                      <Font name="Roboto" size="16.0" />
+                                                   </font>
+                                                </Text>
+                                             </children>
+                                          </VBox>
+                                       </children>
+                                       <padding>
+                                          <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+                                       </padding>
+                                    </HBox>
+                                    <HBox fx:id="button_info" alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+                                       <padding>
+                                          <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+                                       </padding>
+                                       <children>
+                                          <Button fx:id="issuesBtn" mnemonicParsing="false" prefHeight="40.0" prefWidth="150.0" styleClass="button-1" text="Issues">
+                                             <font>
+                                                <Font size="16.0" />
+                                             </font>
+                                             <cursor>
+                                                <Cursor fx:constant="HAND" />
+                                             </cursor>
+                                          </Button>
+                                       </children>
+                                    </HBox>
+                                 </children>
+                                 <padding>
+                                    <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
+                                 </padding>
+                              </VBox>
+                           </children></AnchorPane>
+                  </content>
+                </Tab>
+                <Tab fx:id="submission_ID" text="Renew / Submission">
+                  <content>
+                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                           <children>
+                              <BorderPane layoutX="199.0" layoutY="126.0" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                 <top>
+                                    <HBox alignment="CENTER" BorderPane.alignment="CENTER">
+                                       <children>
+                                          <JFXTextField fx:id="bookID" alignment="CENTER" onAction="#loadBookInfo2" prefHeight="49.0" prefWidth="300.0" promptText="Enter Book ID.">
+                                             <font>
+                                                <Font size="16.0" />
+                                             </font>
+                                          </JFXTextField>
+                                       </children>
+                                    </HBox>
+                                 </top>
+                                 <padding>
+                                    <Insets top="20.0" />
+                                 </padding>
+                                 <center>
+                                    <ListView fx:id="listView" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+                                       <BorderPane.margin>
+                                          <Insets top="16.0" />
+                                       </BorderPane.margin>
+                                    </ListView>
+                                 </center>
+                                 <bottom>
+                                    <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="20.0" BorderPane.alignment="CENTER">
+                                       <children>
+                                          <Button mnemonicParsing="false" onAction="#rewnewBtnAction" prefHeight="40.0" prefWidth="150.0" styleClass="button-1" text="Renew">
+                                             <font>
+                                                <Font name="Roboto Medium" size="16.0" />
+                                             </font>
+                                             <cursor>
+                                                <Cursor fx:constant="HAND" />
+                                             </cursor>
+                                          </Button>
+                                          <Button mnemonicParsing="false" onAction="#submissionBtnAction" prefHeight="40.0" prefWidth="150.0" styleClass="button-1" text="Submission">
+                                             <font>
+                                                <Font name="Roboto Medium" size="16.0" />
+                                             </font>
+                                             <cursor>
+                                                <Cursor fx:constant="HAND" />
+                                             </cursor>
+                                          </Button>
+                                       </children>
+                                    </HBox>
+                                 </bottom>
+                              </BorderPane>
+                           </children></AnchorPane>
+                  </content>
+                </Tab>
+              </tabs>
+            </TabPane>
+         </center>
+      </BorderPane>
+   </children>
+</StackPane>

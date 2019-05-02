@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXCheckBox?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #e74c3c;" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controller.SignUpController">
+   <children>
+      <AnchorPane layoutY="96.0" prefHeight="304.0" prefWidth="601.0" style="-fx-background-color: #ecf0f1;">
+         <children>
+            <AnchorPane prefHeight="53.0" prefWidth="601.0" style="-fx-background-color: #ff6659;">
+               <children>
+                  <Label alignment="CENTER" layoutX="265.0" layoutY="13.0" prefHeight="23.0" prefWidth="72.0" text="Sign Up" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <JFXTextField fx:id="firstNameSignUpId" focusColor="#9a0007" layoutX="14.0" layoutY="60.0" prefHeight="48.0" prefWidth="257.0" promptText="First Name" unFocusColor="#ff6659">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="lastNameSignUpId" focusColor="#9a0007" layoutX="14.0" layoutY="128.0" prefHeight="48.0" prefWidth="257.0" promptText="Last Name" unFocusColor="#ff6659">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="userNameSignUpId" focusColor="#9a0007" layoutX="14.0" layoutY="189.0" prefHeight="48.0" prefWidth="257.0" promptText="UserName" unFocusColor="#ff6659">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </JFXTextField>
+            <JFXPasswordField fx:id="passwordSignUpId" focusColor="#9a0007" layoutX="334.0" layoutY="60.0" prefHeight="48.0" prefWidth="257.0" promptText="Password" unFocusColor="#ff6659" />
+            <JFXCheckBox fx:id="maleCbId" layoutX="369.0" layoutY="200.0" prefHeight="27.0" prefWidth="83.0" text="Male" unCheckedColor="#ff6659">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXCheckBox>
+            <JFXCheckBox fx:id="femaleCbId" layoutX="459.0" layoutY="200.0" prefHeight="27.0" prefWidth="83.0" text="Female" unCheckedColor="#ff6659">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXCheckBox>
+            <JFXButton fx:id="signUpButtonId" layoutX="388.0" layoutY="247.0" prefHeight="43.0" prefWidth="128.0" style="-fx-background-color: #9a0007;" text="Sign Up" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <JFXTextField fx:id="locationSignUpId" focusColor="#9a0007" layoutX="331.0" layoutY="128.0" prefHeight="48.0" prefWidth="257.0" promptText="Location" unFocusColor="#ff6659">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </JFXTextField>
+         </children>
+      </AnchorPane>
+      <Label alignment="CENTER" layoutX="265.0" layoutY="25.0" prefHeight="36.0" prefWidth="72.0" text="2DO" textFill="#fffefe">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

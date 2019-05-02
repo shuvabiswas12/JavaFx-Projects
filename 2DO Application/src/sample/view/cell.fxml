@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="rootAnchorPane" prefHeight="80.0" prefWidth="280.0" style="-fx-background-color: #2E4053;" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label fx:id="taskNameLabel" layoutX="8.0" layoutY="6.0" prefHeight="17.0" prefWidth="164.0" text="Task Name" textFill="#16bbdb" />
+      <ImageView fitHeight="41.0" fitWidth="41.0" layoutX="3.0" layoutY="22.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assests/icons8-tasks-50.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="descriptionLabel" layoutX="48.0" layoutY="27.0" prefHeight="27.0" prefWidth="187.0" text="Description" textFill="#d6dbdf" wrapText="true" />
+      <ImageView fx:id="deleteButton" fitHeight="27.0" fitWidth="33.0" layoutX="205.0" layoutY="3.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assests/icons8-trash-50.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="dateTimeLabel" alignment="CENTER_RIGHT" layoutX="101.0" layoutY="63.0" prefHeight="17.0" prefWidth="171.0" style="-fx-background-color: white;" text="Date Time" textFill="#dae10a" />
+      <ImageView fx:id="updateId" fitHeight="27.0" fitWidth="27.0" layoutX="235.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assests/icons8-synchronize-50.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

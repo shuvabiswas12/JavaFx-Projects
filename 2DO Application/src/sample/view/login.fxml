@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.Bloom?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #d32f2f;" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controller.LoginController">
+   <children>
+      <AnchorPane layoutY="96.0" prefHeight="304.0" prefWidth="600.0" style="-fx-background-color: #ecf0f1;">
+         <children>
+            <JFXTextField fx:id="userNameId" focusColor="#9a0007" layoutX="143.0" layoutY="69.0" prefHeight="51.0" prefWidth="315.0" promptText="User Name" unFocusColor="#ff6659">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </JFXTextField>
+            <JFXPasswordField fx:id="passwordId" focusColor="#9a0007" layoutX="143.0" layoutY="139.0" prefHeight="53.0" prefWidth="315.0" promptText="Password" unFocusColor="#ff6659" />
+            <JFXButton fx:id="loginBtnId" layoutX="196.0" layoutY="224.0" prefHeight="40.0" prefWidth="209.0" style="-fx-background-color: #9a0007;" text="Log In" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <Label alignment="CENTER" layoutX="258.0" layoutY="14.0" prefHeight="43.0" prefWidth="85.0" text="Log In">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <Label alignment="CENTER" layoutX="242.0" layoutY="25.0" prefHeight="34.0" prefWidth="116.0" text="2DO" textFill="#f2f2f2">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Label>
+      <JFXButton fx:id="signUpBtnId" alignment="CENTER" layoutX="492.0" layoutY="14.0" prefHeight="17.0" prefWidth="94.0" style="-fx-background-color: #9a0007;" text="Sign Up" textFill="#fcfcfc">
+         <font>
+            <Font size="14.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <Bloom />
+         </effect>
+      </JFXButton>
+   </children>
+</AnchorPane>

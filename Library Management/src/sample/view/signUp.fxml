@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<StackPane fx:id="stackpane" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controller.SignupController">
+   <children>
+      <AnchorPane prefHeight="450.0" prefWidth="600.0" stylesheets="@../styles/user.css">
+         <children>
+            <VBox layoutX="250.0" layoutY="100.0" prefHeight="200.0" prefWidth="100.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <AnchorPane prefHeight="87.0" prefWidth="600.0" styleClass="top-box">
+                     <children>
+                        <Text fill="#fcfcfc" layoutX="261.0" layoutY="40.0" strokeType="OUTSIDE" strokeWidth="0.0" text="SignUp" textAlignment="CENTER" underline="true">
+                           <font>
+                              <Font name="Roboto" size="25.0" />
+                           </font>
+                        </Text>
+                     </children>
+                     <padding>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </padding>
+                  </AnchorPane>
+                  <HBox VBox.vgrow="ALWAYS">
+                     <children>
+                        <VBox prefHeight="313.0" prefWidth="192.0" spacing="40.0">
+                           <children>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text-box" text="Name :" />
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text-box" text="Password :" />
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text-box" text="Email :" />
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text-box" text="Location :" />
+                           </children>
+                           <padding>
+                              <Insets bottom="20.0" left="20.0" right="20.0" top="25.0" />
+                           </padding>
+                           <HBox.margin>
+                              <Insets />
+                           </HBox.margin>
+                        </VBox>
+                        <VBox prefHeight="200.0" prefWidth="100.0" spacing="20.0" HBox.hgrow="ALWAYS">
+                           <padding>
+                              <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+                           </padding>
+                           <children>
+                              <JFXTextField fx:id="nameId" onAction="#signupBtnAction" prefHeight="50.0" promptText="ex. Songita Das">
+                                 <font>
+                                    <Font name="Roboto" size="16.0" />
+                                 </font>
+                              </JFXTextField>
+                              <JFXPasswordField fx:id="passwordId" onAction="#signupBtnAction" prefHeight="50.0" promptText="ex. S_B_2939">
+                                 <font>
+                                    <Font size="16.0" />
+                                 </font>
+                              </JFXPasswordField>
+                              <JFXTextField fx:id="emailId" onAction="#signupBtnAction" prefHeight="50.0" promptText="ex. Songita@example.com">
+                                 <font>
+                                    <Font size="16.0" />
+                                 </font>
+                              </JFXTextField>
+                              <JFXTextField fx:id="locationId" onAction="#signupBtnAction" prefHeight="50.0" promptText="ex. Chittagong">
+                                 <font>
+                                    <Font size="16.0" />
+                                 </font>
+                              </JFXTextField>
+                           </children>
+                        </VBox>
+                     </children>
+                  </HBox>
+                  <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0">
+                     <children>
+                        <JFXButton buttonType="RAISED" onAction="#signupBtnAction" prefHeight="50.0" prefWidth="250.0" style="-fx-background-radius: 20;" styleClass="btn" text="Signup">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </JFXButton>
+                     </children>
+                  </VBox>
+               </children>
+            </VBox>
+         </children>
+         <padding>
+            <Insets bottom="20.0" />
+         </padding>
+      </AnchorPane>
+   </children>
+</StackPane>
